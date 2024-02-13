@@ -1,5 +1,15 @@
 # Alex Teeples | Alexia Smith | Oliver Fedderson | Emil Grunenwald | Sreeram Patcha |
-##  Whack-A-Mole Group Project
+##  Text Based Adventure
 
 
-Object Oriented C++ game complete with graphics 
+### Classes
+
+1. Enemy Class with Health,Power,Level and Initiative variables.
+2. Player Class with Health,Power,Initiative, and Ineventory.
+3. Loot Classes
+    * General Weapon
+    * General Sheild
+    * General Spell
+
+    
+### Outline
