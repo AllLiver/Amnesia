@@ -8,7 +8,7 @@
 2. Player Class with Health,Power,Initiative, and Ineventory.
 3. Loot Classes
     * General Weapon
-    * General Sheild
+    * General Shield
     * General Spell
 
     
