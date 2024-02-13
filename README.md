@@ -2,8 +2,8 @@
 ##  Text Based Adventure
 
 
-### Classes
-
+### Outline
+#### Classes
 1. Enemy Class with Health,Power,Level and Initiative variables.
 2. Player Class with Health,Power,Initiative, and Ineventory.
 3. Loot Classes
@@ -11,5 +11,3 @@
     * General Sheild
     * General Spell
 
-    
-### Outline
