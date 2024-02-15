@@ -1,5 +1,5 @@
 # Alex Teeples | Alexia Smith | Oliver Fedderson | Emil Grunenwald | Sreeram Patcha |
-##  Text Based Adventure
+##  Amesia | Text Based Adventure |
 
 
 ### Outline
@@ -13,3 +13,4 @@
 
 ### Plot
 #### You wake up in a fantasy medieval dungeon with no memories and you muct find your way out
+#### Possible Plots
