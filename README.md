@@ -1,5 +1,13 @@
 # Alex Teeples | Alexia Smith | Oliver Fedderson | Emil Grunenwald | Sreeram Patcha |
-##  Amnesia | Text Based Adventure |
+##  Amnesia
+An engaging text based adventure with combat and puzzles
+
+## Members
+* Alex Teeples: Project Manager
+* Oliver Fedderson: Coder
+* Emil Gruenwald: Coder
+* Sreeram Patcha:
+* Alexia Smith: Head of Story
 
 
 ### Outline
@@ -12,5 +20,5 @@
     * General Spell
 
 ### Plot
-#### You wake up in a fantasy medieval dungeon with no memories and you muct find your way out
+#### You wake up in a fantasy medieval dungeon with no memories and you must find your way out
 
