@@ -23,5 +23,6 @@ An interactive text based adventure with combat and puzzles. The player takes th
 
 
 
-###GUI Mockup
+### GUI Mockup
+
 ![GUIMockup](https://github.com/AllLiver/Amnesia/blob/main/images/GuiMockup.drawio.png?raw=true)
