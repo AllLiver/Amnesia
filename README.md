@@ -6,8 +6,9 @@ An interactive text based adventure with combat and puzzles. The player takes th
 * Alex Teeples: Project Manager/Tester
 * Oliver Fedderson: Coder
 * Emil Gruenwald: Coder
-* Sreeram Patcha:
+* Sreeram Patcha: Designer/researcher
 * Alexia Smith: Head of Story
+* Tymon Nitecki: Tester/researcher
 
 
 ### Outline
