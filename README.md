@@ -1,5 +1,5 @@
 # Alex Teeples | Alexia Smith | Oliver Fedderson | Emil Grunenwald | Sreeram Patcha |
-##  Amesia | Text Based Adventure |
+##  Amnesia | Text Based Adventure |
 
 
 ### Outline
