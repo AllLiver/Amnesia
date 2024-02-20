@@ -1,2 +1,1 @@
-g++ main.cpp classes/test-class/test.cpp
-./a.out
+g++ -o amnesia main.cpp classes/test-class/test.cpp
