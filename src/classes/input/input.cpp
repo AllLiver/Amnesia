@@ -3,9 +3,9 @@
 #include <cstdlib>
 using namespace std;
 
-string Input::input() {
+string Input::input(string msg) {
     string buf;
-    cout << "Enter something" << endl;
+    cout << msg << endl;
     cin >> buf;
 
     return buf;

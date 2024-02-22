@@ -5,5 +5,6 @@ using namespace std;
 
 int main() {
     Input i;
-    string buf = i.input();
+    string buf = i.input("d");
+    cout << buf << endl;
 }

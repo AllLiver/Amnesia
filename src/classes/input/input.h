@@ -4,5 +4,5 @@ using namespace std;
 
 class Input {
     public:
-        string input();
+        string input(string msg);
 };
