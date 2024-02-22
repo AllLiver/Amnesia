@@ -6,7 +6,7 @@ using namespace std;
 string Input::input(string msg) {
     string buf;
     cout << msg << endl;
-    cin >> buf;
+    getline(cin, buf);
 
     return buf;
 }
