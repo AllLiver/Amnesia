@@ -1,2 +1,2 @@
-g++ main.cpp classes/test-class/test.cpp
+g++ main.cpp classes/input/input.cpp
 ./a.out
