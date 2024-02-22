@@ -1,7 +1,9 @@
 #include <iostream>
 #include <string>
 
+using namespace std;
+
 class Image {
     public: 
-        void print_img(std::string filename);
+        void print_img(string filename);
 };
