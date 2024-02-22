@@ -1,1 +1,1 @@
-g++ -o amnesia main.cpp classes/test-class/test.cpp
+g++ -o amnesia main.cpp classes/input/input.cpp
