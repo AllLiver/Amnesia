@@ -19,6 +19,8 @@ An interactive text based adventure with combat and puzzles. The player takes th
     * General Weapon
     * General Shield
     * General Spell
+4. Level Class
+5. Img Class
 ![classdiagram](https://github.com/AllLiver/Amnesia/blob/main/images/class.png?raw=true)
 
 
