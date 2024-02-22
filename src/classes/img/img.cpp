@@ -2,10 +2,12 @@
 #include <iostream>
 #include <fstream>
 
-void Image::print_img(std::string filename) {
-    std::string line;
-    std::vector<std::string> entire;
-    std::fstream myfile;
+using namespace std;
+
+void Image::print_img(string filename) {
+    string line;
+    vector<string> entire;
+    fstream myfile;
     entire.clear();
     myfile.open(filename);
     while (getline (myfile, line)) {
@@ -13,7 +15,7 @@ void Image::print_img(std::string filename) {
     }
     myfile.close();
     for(int i = 0; i < entire.size(); i ++) {
-        std::cout << entire[i] + "\n";
+        cout << entire[i] + "\n";
     }
 }
 
