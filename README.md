@@ -19,7 +19,7 @@ An interactive text based adventure with combat and puzzles. The player takes th
     * General Weapon
     * General Shield
     * General Spell
-![classdiagram](https://github.com/AllLiver/Amnesia/blob/main/images/classdiagram.png?raw=true)
+![classdiagram](https://github.com/AllLiver/Amnesia/blob/main/images/class.png?raw=true)
 
 
 
