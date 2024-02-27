@@ -2,6 +2,7 @@
 #include <cstdlib>
 #include <vector>
 #include "classes/input/input.h"
+using namespace std;
  
 
 int main() {
