@@ -20,8 +20,8 @@ An interactive text based adventure with combat and puzzles. The player takes th
     * General Shield
     * General Spell
 4. Level Class
-5. Img Class
-![classdiagram](https://github.com/AllLiver/Amnesia/blob/main/images/class.png?raw=true)
+5. Img Class by TN and SP
+![classdiagram](https://github.com/AllLiver/Amnesia/blob/main/images/TN%26SP%20amnesia.png?raw=true)
 
 
 
