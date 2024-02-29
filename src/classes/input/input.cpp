@@ -22,7 +22,7 @@ string Input::input(string msg, vector<string> validArgs) {
             return buf;
             break;
         } else {
-            cout << "Invalid answer" << endl;
+            cout << "Invalid answer\n" << endl;
         }
     }
 }
