@@ -31,4 +31,4 @@ An interactive text based adventure with combat and puzzles. The player takes th
 
 ### Script Document
 
-[Script]([https://docs.google.com/document/d/1F3mtKZmisULB8qps1sTR8Pgd-AnuWUekt4y_VfUn9Ek/edit?usp=sharing](https://docs.google.com/document/d/1F3mtKZmisULB8qps1sTR8Pgd-AnuWUekt4y_VfUn9Ek/edit?usp=sharing)https://docs.google.com/document/d/1F3mtKZmisULB8qps1sTR8Pgd-AnuWUekt4y_VfUn9Ek/edit?usp=sharing)
+[Script](https://docs.google.com/document/d/1F3mtKZmisULB8qps1sTR8Pgd-AnuWUekt4y_VfUn9Ek/edit?usp=sharing)
