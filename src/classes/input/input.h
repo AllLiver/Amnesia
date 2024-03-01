@@ -5,5 +5,6 @@ using namespace std;
 
 class Input {
     public:
-        string input(string msg, vector<string> validArgs);
+        vector<string> opts;
+        string input(string msg);
 };
