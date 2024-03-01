@@ -3,12 +3,7 @@
 
 using namespace std;
 
-class Shield {
-public:
-    int block;
-    string name;
-    Shield (string n, int b) {
-        name = n;
-        block = b;
-    }
-};
+Shield::Shield(string n, int b) {
+    name = n;
+    block = b;
+}

@@ -7,9 +7,9 @@
 using namespace std;
 
 class Player {
-public:
-    int health, maxHealth, speed;
-    vector<Weapon> weapons;
-    vector<Spell> spells;
-    vector<Shield> shields;
+    public:
+        int health, maxHealth, speed;
+        vector<Weapon> weapons;
+        vector<Spell> spells;
+        vector<Shield> shields;
 };

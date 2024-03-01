@@ -34,5 +34,5 @@ An interactive text based adventure with combat and puzzles. The player takes th
 [Script](https://docs.google.com/document/d/1F3mtKZmisULB8qps1sTR8Pgd-AnuWUekt4y_VfUn9Ek/edit?usp=sharing)
 
 ### Logs
-## We changed the way the artwork worked
-## We have the first encounter in the story
+#### We changed the way the artwork worked
+#### We have the first encounter in the story

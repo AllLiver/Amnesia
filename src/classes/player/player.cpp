@@ -6,10 +6,3 @@
 #include "classes/spell/spell.h"
 using namespace std;
 
-class Player {
-public:
-    int health, maxHealth, speed;
-    vector<Weapon> weapons;
-    vector<Spell> spells;
-    vector<Shield> shields;
-};
