@@ -7,4 +7,8 @@ class Shield {
 public:
     int block;
     string name;
+    Shield (string n, int b) {
+        name = n;
+        block = b;
+    }
 };
