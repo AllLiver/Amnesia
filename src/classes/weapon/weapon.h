@@ -3,8 +3,8 @@
 using namespace std;
 
 class Weapon {
-public:
-  int damage;
-  string name;
-  Weapon (string n, int d);
+  public:
+    int damage;
+    string name;
+    Weapon (string n, int d);
 };

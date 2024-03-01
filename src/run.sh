@@ -1,2 +1,2 @@
-g++ main.cpp classes/input/input.cpp classes/player/player.cpp
+g++ main.cpp classes/input/input.cpp
 ./a.out
