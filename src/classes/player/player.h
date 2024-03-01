@@ -12,4 +12,8 @@ class Player {
         vector<Weapon> weapons;
         vector<Spell> spells;
         vector<Shield> shields;
+
+        bool hasweapon(string name);
+        bool hasspell(string name);
+        bool hasshield(string name);
 };
