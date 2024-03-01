@@ -36,7 +36,7 @@ int main() {
         break;
     }
      if(chosenAction == "leg") {
-        cout << "Out of desperation, you \e[3m cut your leg\e[23m. It wasn’t as hard as you expected. You are now free to roam the room, minus one leg of course." << endl;
+        cout << "Out of desperation, you \e[3m cut off your leg\e[23m. It wasn’t as hard as you expected. You are now free to roam the room, minus one leg of course." << endl;
         break;
     }
     }
