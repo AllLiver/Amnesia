@@ -11,5 +11,10 @@ int main() {
     vector<string> opts;
     opts.push_back("sword");
     opts.push_back("torch");
-    opt1.input("Pick up the sword or torch?", opts);
+    string chosenItem = opt1.input("Pick up the sword or torch?", opts);
+    if(chosenItem == "sword") {
+        cout << "\nWhen you reach the rusty sword from the ground, you successfully pick it up. However, a more pressing issue has just presented itself: You are chained to the wall by your ankle. A rusty manacle connected to an equally rusty chain. You can’t move any further unless this chain is dealt with." << endl;
+    } else {
+        cout << "\nWhen you reach the lit torch from the wall, you successfully pick it up. However, a more pressing issue has just presented itself: You are chained to the wall by your ankle. A rusty manacle connected to an equally rusty chain. You can’t move any further unless this chain is dealt with." << endl;
+    }
 }
