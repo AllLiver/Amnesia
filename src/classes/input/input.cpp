@@ -4,7 +4,9 @@
 #include <vector>
 using namespace std;
 
-string Input::input(string msg, vector<string> validArgs) {
+
+
+string Input::input(string msg) {
     for (;;) {
         string buf;
         cout << msg << endl;
@@ -12,7 +14,7 @@ string Input::input(string msg, vector<string> validArgs) {
 
         bool doBreak = false;
 
-        for (auto i = validArgs.begin(); i != validArgs.end(); i++) {
+        for (auto i = opts.begin(); i != opts.end(); i++) {
             if (buf == *i) {
                 doBreak = true;
             }
