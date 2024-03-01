@@ -6,9 +6,9 @@
 #include "classes/spell/spell.h"
 
 class Player {
-public:
-    int health, maxHealth, speed;
-    vector<Weapon> weapons;
-    vector<Spell> spells;
-    vector<Shield> shields;
+    public:
+        int health, maxHealth, speed;
+        vector<Weapon> weapons;
+        vector<Spell> spells;
+        vector<Shield> shields;
 };
