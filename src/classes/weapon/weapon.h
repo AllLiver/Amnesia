@@ -1,3 +1,6 @@
+#ifndef WEAPON_H
+#define WEAPON_H
+
 #include <iostream>
 
 using namespace std;
@@ -8,3 +11,5 @@ class Weapon {
     string name;
     Weapon (string n, int d);
 };
+
+#endif

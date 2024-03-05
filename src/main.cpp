@@ -3,7 +3,6 @@
 #include <vector>
 #include "classes/input/input.h"
 #include "classes/player/player.h"
-#include "classes/weapon/weapon.h"
 using namespace std;
  
 
@@ -22,18 +21,31 @@ int main() {
         cout << "\nWhen you reach the lit torch from the wall, you successfully pick it up. However, a more pressing issue has just presented itself: You are chained to the wall by your ankle. A rusty manacle connected to an equally rusty chain. You can’t move any further unless this chain is dealt with." << endl;
     }
 
+    bool chainBroken = false;
+
     while(true){
         Input action2;
         action2.opts.push_back("destroy");
         action2.opts.push_back("door");
-        action2.opts.push_back("leg");
-        string chosenAction = action2.input("You can either cut off your LEG, go to the DOOR, or DESTROY the chain and ruin your sword... what will you choose?");
+        string chosenAction;
+        if (count(player.weapons.begin(), player.weapons.end(), Weapon("Rusty Sword", 3)) > 0) {
+            action2.opts.push_back("leg");
+            chosenAction = action2.input("You can either cut off your LEG, go to the DOOR, or DESTROY the chain and ruin your sword... what will you choose?");
+        } else {
+            chosenAction = action2.input("You can either go to the DOOR, or DESTROY the chain and ruin your torch... what will you choose?");
+        }
         if(chosenAction == "door") {
             cout << "You try to walk to the door but you are stopped by a manacle around your ankle. You are chained to the wall. That must be dealt with before you can leave." << endl;
             continue;
         }
         if(chosenAction == "destroy") {
-            cout << "You hit the chain with the rusty sword, and the chain -- being weakened by rust -- breaks easily. The manacle remains attached but you are free from the wall. Unfortunately, due to your use of the sword, the blade has been weakened." << endl;
+            if (count(player.weapons.begin(), player.weapons.end(), Weapon("Rusty Sword", 3)) > 0) {
+                cout << "You hit the chain with the rusty sword, and the chain -- being weakened by rust -- breaks easily. The manacle remains attached but you are free from the wall. Unfortunately, due to your use of the sword, the blade has been weakened." << endl;
+                replace(player.weapons.begin(), player.weapons.end(), Weapon("Rusty Sword", 3), Weapon("Dented Sword", 2));
+            } else if (count(player.weapons.begin(), player.weapons.end(), Weapon("Lit Torch", 2)) > 0) {
+                cout << "You hit the chain with the torch, and the chain -- being weakened by rust -- breaks easily. The manacle remains attached but you are free from the wall. Unfortunately, due to your use of the torch, the flame has burnt out." << endl;
+                replace(player.weapons.begin(), player.weapons.end(), Weapon("Lit Torch", 2), Weapon("Burnt Torch", 1));
+            }
             break;
         }
         if(chosenAction == "leg") {

@@ -1,3 +1,6 @@
+#ifndef SPELL_H
+#define SPELL_H
+
 #include <iostream>
 
 using namespace std;
@@ -8,3 +11,5 @@ public:
   string name;
   Spell(string n, int d, int db, int hb, int dd, int c, int t);
 };
+
+#endif
