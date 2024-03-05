@@ -28,7 +28,7 @@ int main() {
         action2.opts.push_back("destroy");
         action2.opts.push_back("door");
         string chosenAction;
-        if (count(player.weapons.begin(), player.weapons.end(), Weapon("Rusty Sword", 3)) > 0) {
+        if (player.hasweapon("Rusty Sword")) {
             action2.opts.push_back("leg");
             chosenAction = action2.input("You can either cut off your LEG, go to the DOOR, or DESTROY the chain and ruin your sword... what will you choose?");
         } else {
@@ -39,10 +39,10 @@ int main() {
             continue;
         }
         if(chosenAction == "destroy") {
-            if (count(player.weapons.begin(), player.weapons.end(), Weapon("Rusty Sword", 3)) > 0) {
+            if (player.hasweapon("Rusty Sword")) {
                 cout << "\nYou hit the chain with the rusty sword, and the chain -- being weakened by rust -- breaks easily. The manacle remains attached but you are free from the wall. Unfortunately, due to your use of the sword, the blade has been weakened." << endl;
                 replace(player.weapons.begin(), player.weapons.end(), Weapon("Rusty Sword", 3), Weapon("Dented Sword", 2));
-            } else if (count(player.weapons.begin(), player.weapons.end(), Weapon("Lit Torch", 2)) > 0) {
+            } else if (player.hasweapon("Lit Torch")) {
                 cout << "\nYou hit the chain with the torch, and the chain -- being weakened by rust -- breaks easily. The manacle remains attached but you are free from the wall. Unfortunately, due to your use of the torch, the flame has burnt out." << endl;
                 replace(player.weapons.begin(), player.weapons.end(), Weapon("Lit Torch", 2), Weapon("Burnt Torch", 1));
             }
@@ -62,10 +62,10 @@ int main() {
         inRoom.opts.push_back("leave");
         string chosenAction = inRoom.input("You are now free to move around the room, letting you pick up the other WEAPON, and you can reach the DOOR... what will you choose?");
         if(chosenAction == "weapon") {
-            if (count(player.weapons.begin(), player.weapons.end(), Weapon("Dented Sword", 2)) > 0) {
+            if (player.hasweapon("Dented Sword")) {
                 player.weapons.push_back(Weapon("Lit Torch", 2));
                 cout << "\nYou now easily take the torch from the wall.";
-            } else if (count(player.weapons.begin(), player.weapons.end(), Weapon("Burnt Torch", 1)) > 0) {
+            } else if (player.hasweapon("Burnt Torch")) {
                 player.weapons.push_back(Weapon("Rusty Sword", 3));
             }
         }
