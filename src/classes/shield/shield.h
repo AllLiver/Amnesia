@@ -1,3 +1,6 @@
+#ifndef SHEILD_H
+#define SHEILD_H
+
 #include <iostream>
 using namespace std;
 
@@ -7,3 +10,5 @@ class Shield {
         string name;
         Shield (string n, int b);
 };
+
+#endif

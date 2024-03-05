@@ -1,3 +1,6 @@
+#ifndef INPUT_H
+#define INPUT_H
+
 #include <cstdlib>
 #include <string>
 #include <vector>
@@ -8,3 +11,5 @@ class Input {
         vector<string> opts;
         string input(string msg);
 };
+
+#endif
