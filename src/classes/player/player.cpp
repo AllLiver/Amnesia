@@ -6,6 +6,13 @@
 #include "../spell/spell.h"
 using namespace std;
 
+Player::Player() {
+    health = 20;
+    maxHealth = 20;
+    speed = 10;
+    legCount = 2;
+}
+
 bool Player::hasweapon(string name) {
     bool has = false;
     for (int i = 0; i < weapons.size(); i ++) {

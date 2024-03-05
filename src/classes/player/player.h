@@ -8,11 +8,12 @@ using namespace std;
 
 class Player {
     public:
-        int health, maxHealth, speed;
+        int health, maxHealth, speed, legCount;
         vector<Weapon> weapons;
         vector<Spell> spells;
         vector<Shield> shields;
 
+        Player();
         bool hasweapon(string name);
         bool hasspell(string name);
         bool hasshield(string name);
