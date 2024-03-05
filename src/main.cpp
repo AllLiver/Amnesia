@@ -3,7 +3,6 @@
 #include <vector>
 #include "classes/input/input.h"
 #include "classes/player/player.h"
-#include "classes/weapon/weapon.h"
 using namespace std;
  
 
@@ -21,6 +20,8 @@ int main() {
         player.weapons.push_back(Weapon("Lit Torch", 2));
         cout << "\nWhen you reach the lit torch from the wall, you successfully pick it up. However, a more pressing issue has just presented itself: You are chained to the wall by your ankle. A rusty manacle connected to an equally rusty chain. You can’t move any further unless this chain is dealt with." << endl;
     }
+
+    bool chainBroken = false;
 
     while(true){
         Input action2;
@@ -41,4 +42,6 @@ int main() {
             break;
         }
     }
+
+    
 }
