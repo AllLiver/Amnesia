@@ -53,7 +53,7 @@ int main() {
 
         }
         if(chosenPath == "right"){
-
+                
         }
 
         else{
