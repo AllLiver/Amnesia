@@ -52,4 +52,25 @@ int main() {
             break;
         }
     }
+
+    //Paths
+    while(true){
+        Input pathChoice;
+        pathChoice.opts.push_back("left");
+        pathChoice.opts.push_back("right");
+        cout << "The hall you’re standing in stretches out into the darkness to the left and right of you. With your torch, you can see the left hall has a wooden door at the end of it painted with runes, and on the right you see that the ground is slanting down slightly into a darkness you can’t distinguish from here. The question is, which way should you go to escape?";
+        string chosenPath = pathChoice.input("LEFT or RIGHT");
+        if (chosenPath == "left"){
+
+        }
+        if(chosenPath == "right"){
+
+        }
+
+        else{
+            cout << "Invalid Input";
+            continue;
+        }
+    }
 }
+
