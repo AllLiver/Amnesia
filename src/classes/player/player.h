@@ -4,6 +4,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <algorithm>
 #include "../weapon/weapon.h"
 #include "../shield/shield.h"
 #include "../spell/spell.h"
@@ -20,6 +21,9 @@ class Player {
         bool hasweapon(string name);
         bool hasspell(string name);
         bool hasshield(string name);
+        void replaceweapon(string name, Weapon w);
+        void replacespell(string name, Spell s);
+        void replaceshield(string name, Shield s);
 };
 
 #endif

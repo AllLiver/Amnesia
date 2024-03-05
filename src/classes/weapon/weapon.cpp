@@ -1,5 +1,7 @@
 #include <iostream>
 #include <cstdlib>
+#include <vector>
+#include <algorithm>
 #include "weapon.h"
 using namespace std;
 

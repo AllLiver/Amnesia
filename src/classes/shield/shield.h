@@ -2,6 +2,7 @@
 #define SHEILD_H
 
 #include <iostream>
+#include <algorithm>
 using namespace std;
 
 class Shield {

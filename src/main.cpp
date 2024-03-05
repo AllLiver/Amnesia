@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <vector>
+#include <algorithm>
 #include "classes/input/input.h"
 #include "classes/player/player.h"
 using namespace std;
@@ -41,10 +42,10 @@ int main() {
         if(chosenAction == "destroy") {
             if (player.hasweapon("Rusty Sword")) {
                 cout << "\nYou hit the chain with the rusty sword, and the chain -- being weakened by rust -- breaks easily. The manacle remains attached but you are free from the wall. Unfortunately, due to your use of the sword, the blade has been weakened." << endl;
-                replace(player.weapons.begin(), player.weapons.end(), Weapon("Rusty Sword", 3), Weapon("Dented Sword", 2));
+                player.replaceweapon("Rusty Sword", Weapon("Dented Sword", 2));
             } else if (player.hasweapon("Lit Torch")) {
                 cout << "\nYou hit the chain with the torch, and the chain -- being weakened by rust -- breaks easily. The manacle remains attached but you are free from the wall. Unfortunately, due to your use of the torch, the flame has burnt out." << endl;
-                replace(player.weapons.begin(), player.weapons.end(), Weapon("Lit Torch", 2), Weapon("Burnt Torch", 1));
+                player.replaceweapon("Lit Torch", Weapon("Burnt Torch", 1));
             }
             break;
         }

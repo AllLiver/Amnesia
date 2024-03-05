@@ -1,5 +1,6 @@
 #include "spell.h"
 #include <iostream>
+#include <algorithm>
 
 using namespace std;
 
