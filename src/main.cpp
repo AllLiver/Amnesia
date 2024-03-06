@@ -65,10 +65,15 @@ int main() {
         if(chosenAction == "weapon") {
             if (player.hasweapon("Dented Sword")) {
                 player.weapons.push_back(Weapon("Lit Torch", 2));
-                cout << "\nYou now easily take the torch from the wall.";
+                cout << "\nYou now easily take the torch from the wall.\n";
             } else if (player.hasweapon("Burnt Torch")) {
                 player.weapons.push_back(Weapon("Rusty Sword", 3));
+                cout << "\nYou now easily pick up the sword.\n";
             }
+        }
+        if(chosenAction == "leave") {
+            cout << "\nYou walk up to the door and open it.\n";
+            break;
         }
     }
 
