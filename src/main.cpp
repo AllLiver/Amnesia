@@ -60,7 +60,7 @@ int main() {
     while(true){
         Input inRoom;
         inRoom.opts.push_back("weapon");
-        inRoom.opts.push_back("leave");
+        inRoom.opts.push_back("door");
         string chosenAction = inRoom.input("You are now free to move around the room, letting you pick up the other WEAPON, and you can reach the DOOR... what will you choose?");
         if(chosenAction == "weapon") {
             if (player.hasweapon("Dented Sword")) {
@@ -71,7 +71,7 @@ int main() {
                 cout << "\nYou now easily pick up the sword.\n";
             }
         }
-        if(chosenAction == "leave") {
+        if(chosenAction == "door") {
             cout << "\nYou walk up to the door and open it.\n";
             break;
         }
