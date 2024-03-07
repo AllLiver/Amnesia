@@ -83,6 +83,22 @@ int main() {
     pathChoice.opts.push_back("right");
     string chosenPath = pathChoice.input("The hall you’re standing in stretches out into the darkness to the left and right of you. With your torch, you can see the left hall has a wooden door at the end of it painted with runes, and on the right you see that the ground is slanting down slightly into a darkness you can’t distinguish from here. The question is, which way should you go to escape? LEFT or RIGHT... what will you choose?");
     if (chosenPath == "left"){
+        Input spellChoice;
+        spellChoice.opts.push_back("Red");
+        spellChoice.opts.push_back("Green");
+        spellChoice.opts.push_back("Blue");
+        cout << "You walk down the hallway and reach a door, engraved with faintly glowing runes. It opens with no resistance into a small library packed with books. Three tomes catch your eye. You have a sinking feeling you will only be able to read one of them.";
+        string chosenSpell = spellChoice.input("Which do you choose? The well worn RED book? The delicate looking GREEN book? Or the sturdy looking BLUE book?");
+        if (chosenSpell == "red"){
+
+        }
+        if (chosenSpell == "green"){
+
+        }
+        if (chosenSpell == "blue"){
+
+        }
+
 
     }
     if(chosenPath == "right"){
