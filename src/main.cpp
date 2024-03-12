@@ -1,3 +1,4 @@
+//Coders: Oliver Fedderson, Emil Gruenwald, Tymon Nitecki, Alex Teeples
 #include <iostream>
 #include <cstdlib>
 #include <vector>
