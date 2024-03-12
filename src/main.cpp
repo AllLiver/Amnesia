@@ -22,16 +22,22 @@ int main() {
         player.weapons.push_back(Weapon("Lit Torch", 2));
         cout << "\nWhen you reach the lit torch from the wall, you successfully pick it up. However, a more pressing issue has just presented itself: You are chained to the wall by your ankle. A rusty manacle connected to an equally rusty chain. You can’t move any further unless this chain is dealt with." << endl;
     }
-
+    bool doorOpt=false;
     while(true){
         Input action2(player);
 
         action2.opts.push_back("destroy");
-        action2.opts.push_back("door");
+        
         string chosenAction;
         if (player.hasweapon("Rusty Sword") && player.legCount==2) {
             action2.opts.push_back("leg");
-            chosenAction = action2.input("You can either cut off your LEG, go to the DOOR, or DESTROY the chain and ruin your sword... what will you choose?");
+            if (doorOpt==false){
+                action2.opts.push_back("door");
+                chosenAction = action2.input("You can either cut off your LEG, go to the DOOR, or DESTROY the chain and ruin your sword... what will you choose?");
+                doorOpt=true;
+            } else{
+                chosenAction = action2.input("You can either cut off your LEG or DESTROY the chain and ruin your sword... what will you choose?");
+            }
         } else {
             chosenAction = action2.input("You can either go to the DOOR, or DESTROY the chain and ruin your torch... what will you choose?");
         }
