@@ -78,31 +78,22 @@ int main() {
     }
 
     //Paths
-    Input pathChoice;
-    pathChoice.opts.push_back("left");
-    pathChoice.opts.push_back("right");
-    string chosenPath = pathChoice.input("The hall you’re standing in stretches out into the darkness to the left and right of you. With your torch, you can see the left hall has a wooden door at the end of it painted with runes, and on the right you see that the ground is slanting down slightly into a darkness you can’t distinguish from here. The question is, which way should you go to escape? LEFT or RIGHT... what will you choose?");
-    if (chosenPath == "left"){
-        Input spellChoice;
-        spellChoice.opts.push_back("Red");
-        spellChoice.opts.push_back("Green");
-        spellChoice.opts.push_back("Blue");
-        cout << "You walk down the hallway and reach a door, engraved with faintly glowing runes. It opens with no resistance into a small library packed with books. Three tomes catch your eye. You have a sinking feeling you will only be able to read one of them.";
-        string chosenSpell = spellChoice.input("Which do you choose? The well worn RED book? The delicate looking GREEN book? Or the sturdy looking BLUE book?");
-        if (chosenSpell == "red"){
-
-        }
-        if (chosenSpell == "green"){
-
-        }
-        if (chosenSpell == "blue"){
-
-        }
-
-
+    Input spellChoice;
+    spellChoice.opts.push_back("Red");
+    spellChoice.opts.push_back("Green");
+    spellChoice.opts.push_back("Blue");
+    cout << "You walk down the hallway and reach a door, engraved with faintly glowing runes. It opens with no resistance into a small library packed with books. Three tomes catch your eye. You have a sinking feeling you will only be able to read one of them.";
+    string chosenSpell = spellChoice.input("Which do you choose? The well worn RED book? The delicate looking GREEN book? Or the sturdy looking BLUE book?");
+    if (chosenSpell == "red"){
+        player.spells.push_back(Spell("Firebolt", 5, 0, 0, 0, 3, 1));
+        cout << "\nYou open the red book. It contains the instructions for a basic offensive spell that shoots fire in the direction of an enemy. The spell is called firebolt\n";
     }
-    if(chosenPath == "right"){
-            
+    if (chosenSpell == "green"){
+        player.spells.push_back(Spell("Heal", 0, 0, 5, 0, 5, 0));
+        cout << "\nYou open the green book. It contains the instruction for a basic protection spell that will heal the wounds of the user. The spell is called heal\n";
+    }
+    if (chosenSpell == "blue"){
+        player.spells.push_back(Spell("Slow", 0, 0, 0, 3, 2, 1));
+        cout << "\nYou open the blue book. It contains the instructions for a curse that will weaken an enemy. The spell is called slow\n";
     }
 }
-

@@ -12,7 +12,7 @@ using namespace std;
 
 class Player {
     public:
-        int health, maxHealth, speed, legCount;
+        int health, maxHealth, maxMagicPower, magicPower, speed, legCount;
         vector<Weapon> weapons;
         vector<Spell> spells;
         vector<Shield> shields;
