@@ -31,13 +31,13 @@ int main() {
         string chosenAction;
         if (player.hasweapon("Rusty Sword") && player.legCount==2) {
             action2.opts.push_back("leg");
-            if (doorOpt==false){
+            if (doorOpt==false){ // TO DO
                 action2.opts.push_back("door");
                 chosenAction = action2.input("You can either cut off your LEG, go to the DOOR, or DESTROY the chain and ruin your sword... what will you choose?");
                 doorOpt=true;
             } else{
                 chosenAction = action2.input("You can either cut off your LEG or DESTROY the chain and ruin your sword... what will you choose?");
-            }
+            } // TO DO
         } else {
             chosenAction = action2.input("You can either go to the DOOR, or DESTROY the chain and ruin your torch... what will you choose?");
         }
