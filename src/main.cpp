@@ -62,7 +62,7 @@ int main() {
         }
     }
 
-    while(true){
+    while(true) {
         Input inRoom;
         inRoom.opts.push_back("weapon");
         inRoom.opts.push_back("door");
