@@ -57,20 +57,30 @@ int main() {
         }
     }
 
+    bool otherWeapon = false;
+
     while(true) {
         Input inRoom;
-
-
-        inRoom.opts.push_back("weapon");
+        string chosenAction;
+        
         inRoom.opts.push_back("door");
-        string chosenAction = inRoom.input("You are now free to move around the room, letting you pick up the other WEAPON, and you can reach the DOOR... what will you choose?");
+        if (otherWeapon == false) {
+            inRoom.opts.push_back("weapon");
+            chosenAction = inRoom.input("You are now free to move around the room, letting you pick up the other WEAPON, and you can reach the DOOR... what will you choose?");
+        } else {
+            chosenAction = inRoom.input("You are now free to move around the room, the only option left is to move through the DOOR...");
+        }
+
+
         if(chosenAction == "weapon") {
-            if (player.hasweapon("Dented Sword")) {
+            if (player.hasweapon("Dented Sword") || player.hasweapon("Rusty Sword")) {
                 player.weapons.push_back(Weapon("Lit Torch", 2));
                 cout << "\nYou now easily take the torch from the wall.\n" << endl;
+                otherWeapon = true;
             } else if (player.hasweapon("Burnt Torch")) {
                 player.weapons.push_back(Weapon("Rusty Sword", 3));
                 cout << "\nYou now easily pick up the sword.\n" << endl;
+                otherWeapon = true;
             }
         }
         if(chosenAction == "door") {
