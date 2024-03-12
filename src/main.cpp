@@ -10,6 +10,7 @@ using namespace std;
 int main() {
     Player player;
     cout << "Welcome to Amnesia. Let the adventure begin. \n\n Cold. That’s the first thing you feel. Oppressive cold. You look around at unfamiliar surroundings. You don’t know where you are. Actually…\n\n You don’t know \e[3mwho\e[23m you are either. If you did know, you’d probably have some clue to why you’re locked up in this dungeon. Weathered gray brick walls surround you on all sides. The only items in the room are a dimly burning torch on the wall and a rusty sword on the floor. Directly across from you is a sturdy looking wooden door. The only question you have left is…\n\nWhat do you do now?" << endl;
+    cout << "At any time, simply enter HELP to recieve help with global commands\n" << endl;
     Input opt1;
     opt1.opts.push_back("sword");
     opt1.opts.push_back("torch");
@@ -69,10 +70,10 @@ int main() {
         if(chosenAction == "weapon") {
             if (player.hasweapon("Dented Sword")) {
                 player.weapons.push_back(Weapon("Lit Torch", 2));
-                cout << "\nYou now easily take the torch from the wall.\n";
+                cout << "\nYou now easily take the torch from the wall.\n" << endl;
             } else if (player.hasweapon("Burnt Torch")) {
                 player.weapons.push_back(Weapon("Rusty Sword", 3));
-                cout << "\nYou now easily pick up the sword.\n";
+                cout << "\nYou now easily pick up the sword.\n" << endl;
             }
         }
         if(chosenAction == "door") {
