@@ -90,7 +90,7 @@ int main() {
         cout << "You walk down the hallway and reach a door, engraved with faintly glowing runes. It opens with no resistance into a small library packed with books. Three tomes catch your eye. You have a sinking feeling you will only be able to read one of them.";
         string chosenSpell = spellChoice.input("Which do you choose? The well worn RED book? The delicate looking GREEN book? Or the sturdy looking BLUE book?");
         if (chosenSpell == "red"){
-
+            //player.spells.push_back(Spell("Fireball Spell", 3));
         }
         if (chosenSpell == "green"){
 
@@ -102,7 +102,8 @@ int main() {
 
     }
     if(chosenPath == "right"){
-            
+        cout << "As you walk down the right-most path, you feel the ground slowly slope beneath you, traveling downwards. Unease fills you as you travel deeper into the earth. Slowly, you realize that this hall you're walking down has a thin layer of damp on the floor. The farther you descend, the deeper the water becomes. As you keep going you realize the water is now around your ankles. Then suddenly, ripples appear around you. A fish? No. Rising from the water is a shambling scaled beast with razor sharp teeth that strikes at you!";
+
     }
 }
 
