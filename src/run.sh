@@ -1,3 +1,4 @@
+# Oliver Fedderson
 rm a.out
 clear
 echo "Running main.cpp..."
