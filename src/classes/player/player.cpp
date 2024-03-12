@@ -10,6 +10,8 @@ using namespace std;
 Player::Player() {
     health = 20;
     maxHealth = 20;
+    maxMagicPower = 10;
+    magicPower = 10;
     speed = 10;
     legCount = 2;
 }
