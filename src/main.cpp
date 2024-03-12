@@ -41,6 +41,7 @@ int main() {
         } else {
             chosenAction = action2.input("You can either go to the DOOR, or DESTROY the chain and ruin your torch... what will you choose?");
         }
+        
         if(chosenAction == "door") {
             cout << "\nYou try to walk to the door but you are stopped by a manacle around your ankle. You are chained to the wall. That must be dealt with before you can leave." << endl;
             continue;
