@@ -40,7 +40,11 @@ string Input::input(string msg) {
             return bufLower;
             break;
         } else {
-            cout << "Invalid answer\n" << endl;
+            if (bufLower == "help") {
+                cout << "\nSome commands you can always do (except in battle) are:\nin: displays your inventory\ndrop: permanently drops a spell or weapon from your inventory" << endl;
+            } else {
+                cout << "Invalid answer\n" << endl;
+            }
         }
     }
 }
