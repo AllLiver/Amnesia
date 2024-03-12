@@ -96,4 +96,3 @@ int main() {
         player.spells.push_back(Spell("Slow", 0, 0, 0, 3, 2, 1));
         cout << "\nYou open the blue book. It contains the instructions for a curse that will weaken an enemy. The spell is called slow\n";
     }
-}
