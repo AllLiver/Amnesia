@@ -1,3 +1,4 @@
+# Oliver Fedderson
 rm amnesia
 clear
 echo "Building main.cpp..."
