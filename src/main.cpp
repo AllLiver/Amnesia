@@ -100,7 +100,7 @@ int main() {
     spellChoice.opts.push_back("red");
     spellChoice.opts.push_back("green");
     spellChoice.opts.push_back("blue");
-    cout << "You walk down the hallway and reach a door, engraved with faintly glowing runes. It opens with no resistance into a small library packed with books. Three tomes catch your eye. You have a sinking feeling you will only be able to read one of them.";
+    cout << "\nYou walk down the hallway and reach a door, engraved with faintly glowing runes. It opens with no resistance into a small library packed with books. Three tomes catch your eye. You have a sinking feeling you will only be able to read one of them.";
     string chosenSpell = spellChoice.input("Which do you choose? The well worn RED book? The delicate looking GREEN book? Or the sturdy looking BLUE book?");
     if (chosenSpell == "red"){
         player.spells.push_back(Spell("Firebolt", 5, 0, 0, 0, 3, 1));
