@@ -11,7 +11,7 @@ int main() {
     Player player;
     cout << "Welcome to Amnesia. Let the adventure begin. \n\n Cold. That’s the first thing you feel. Oppressive cold. You look around at unfamiliar surroundings. You don’t know where you are. Actually…\n\n You don’t know \e[3mwho\e[23m you are either. If you did know, you’d probably have some clue to why you’re locked up in this dungeon. Weathered gray brick walls surround you on all sides. The only items in the room are a dimly burning torch on the wall and a rusty sword on the floor. Directly across from you is a sturdy looking wooden door. The only question you have left is…\n\nWhat do you do now?" << endl;
     cout << "At any time, simply enter HELP to recieve help with global commands\n" << endl;
-    Input opt1;
+    Input opt1(player);
     opt1.opts.push_back("sword");
     opt1.opts.push_back("torch");
     string chosenItem = opt1.input("Pick up the SWORD or TORCH? ... what will you choose?");
@@ -24,7 +24,7 @@ int main() {
     }
 
     while(true){
-        Input action2;
+        Input action2(player);
 
         action2.opts.push_back("destroy");
         action2.opts.push_back("door");
@@ -60,7 +60,7 @@ int main() {
     bool otherWeapon = false;
 
     while(true) {
-        Input inRoom;
+        Input inRoom(player);
         string chosenAction;
         
         inRoom.opts.push_back("door");
@@ -90,7 +90,7 @@ int main() {
     }
 
     //Paths
-    Input spellChoice;
+    Input spellChoice(player);
     spellChoice.opts.push_back("red");
     spellChoice.opts.push_back("green");
     spellChoice.opts.push_back("blue");
