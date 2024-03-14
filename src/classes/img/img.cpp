@@ -1,3 +1,4 @@
+//Emil Gruenwald
 #include "img.h"
 #include <iostream>
 #include <fstream>

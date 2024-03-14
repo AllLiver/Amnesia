@@ -1,3 +1,4 @@
+//Emil Gruenwald
 #include "spell.h"
 #include <iostream>
 #include <algorithm>

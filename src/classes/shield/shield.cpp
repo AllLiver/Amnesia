@@ -1,3 +1,4 @@
+//Emil Gruenwald
 #include "shield.h"
 #include <iostream>
 #include <algorithm>

@@ -1,3 +1,4 @@
+//Emil Gruenwald
 #ifndef BATTLE_H
 #define BATTLE_H
 

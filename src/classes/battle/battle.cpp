@@ -1,3 +1,4 @@
+//Emil Gruenwald
 #include "battle.h"
 
 Battle::Battle(Player p, vector<Enemy> e) {
