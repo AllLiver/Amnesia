@@ -7,6 +7,7 @@
 #include <iostream>
 #include "../enemy/enemy.h"
 #include "../player/player.h"
+#include "../input/input.h"
 using namespace std;
 
 class Battle {

@@ -13,6 +13,7 @@ using namespace std;
 class Player {
     public:
         int health, maxHealth, maxMagicPower, magicPower, speed, legCount;
+        string equippedWeapon, equippedShield;
         vector<Weapon> weapons;
         vector<Spell> spells;
         vector<Shield> shields;

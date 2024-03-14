@@ -1,4 +1,4 @@
-# Alex Teeples | Alexia Smith | Oliver Fedderson | Emil Grunenwald | Sreeram Patcha | Tymon Nitecki |
+# Alex Teeples | Alexia Smith | Oliver Fedderson | Emil Gruenwald | Sreeram Patcha | Tymon Nitecki |
 ##  Amnesia
 An interactive text based adventure with combat and puzzles. The player takes the role of an amnesiac waking up in a fantasy medieval dungeon and trying to find their way out.
 

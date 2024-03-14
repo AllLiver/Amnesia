@@ -22,7 +22,11 @@ void Battle::fight() {
                 if (player.health <= 0) {
                     cout << "You die";
                     dead = true;
+                    break;
                 }
+            }
+            if (!dead) {
+                
             }
         }
     }
