@@ -8,7 +8,7 @@ An interactive text based adventure with combat and puzzles. The player takes th
 * Emil Gruenwald: Coder
 * Sreeram Patcha: Designer/researcher
 * Alexia Smith: Head of Story
-* Tymon Nitecki: Tester/researcher
+* Tymon Nitecki: Designer/researcher/minorcoder
 
 
 ### Outline
